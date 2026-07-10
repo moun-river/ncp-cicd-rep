@@ -1,10 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: target/my-app-1.0.jar
+  - source: /
     destination: /app/
-  - source: scripts/deploy.sh
-    destination: /app/scripts/
 permissions:
   - object: /app/scripts/deploy.sh
     mode: 755
