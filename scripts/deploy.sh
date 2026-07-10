@@ -6,5 +6,8 @@ if [ -n "$pid" ]; then
     kill -9 $pid
 fi
 
+# 로그 디렉토리 생성 (추가된 부분)
+mkdir -p /app/logs
+
 # 새 JAR 실행 (백그라운드)
 nohup java -jar /app/target/my-app-1.0.jar > /app/logs/app.log 2>&1 &
