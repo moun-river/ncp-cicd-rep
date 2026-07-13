@@ -10,4 +10,4 @@ fi
 mkdir -p /app/logs
 
 # 새 JAR 실행 (백그라운드)
-nohup java -jar /app/target/my-app-1.0.jar > /app/logs/app.log 2>&1 &
+nohup java -jar /app/my-app-1.0.jar > /app/logs/app.log 2>&1 &
